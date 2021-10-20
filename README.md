@@ -114,3 +114,32 @@ Push the same to git repository
 ```bash
 git add . && git commit -m "final stage complete" && git push origin main
 ```
+26. command to see test results
+```bash
+pytest -v
+```
+27. create a new directory for writing testcases and files inside it
+```bash
+mkdir tests
+touch tests/conftest.py tests/test_config.py tests/__init__.py
+```
+test_config.py will have testcases 
+
+28. create tox.ini file and write a standarded as as per syntax
+```bash
+touch tox.ini
+```
+here skipdist = True as we don't have setup.py, if we have it can be False,
+If setup.py is created we have to run below command to install setup.py
+```bash
+pip install -e . 
+python setup.py sdist bdist_wheel
+```
+Command to execute test cases via tox is 
+```bash
+tox
+```
+This will create virtual environment, .tor directory will be created
+
+
+
