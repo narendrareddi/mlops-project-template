@@ -99,4 +99,11 @@ git add . && git commit -m "final stage complete"
 ```bash
 git push origin main
 ```
+24. Commands to see differences that model predicted for various parameters
+```bash
+dvc metrics show
+dvc metrics diff
+dvc params show
+dvc params diff
+```
 
