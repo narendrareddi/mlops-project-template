@@ -51,9 +51,20 @@ git branch -M main
 it push -u origin main
 ```
 13. Update params.yaml file
-14. Create get_data.py in src folder and write code to read data from input file
-tox command -
+14. Create get_data.py & load_data in src folder and write code for file creation in data\raw folder
+15. Update corresponding stage information in dvc.yaml and run below command to see changes
+```bash
+dvc repro
+```
+dvc.lock file is created
 
+16. commit changes in git and push code changes to repository 
+```bash
+git add . && git commit -m "first stage complete"
+```
+```bash
+git push origin main
+```
 tox
 for rebuilding -
 
