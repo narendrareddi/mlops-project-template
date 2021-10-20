@@ -65,16 +65,38 @@ git add . && git commit -m "first stage complete"
 ```bash
 git push origin main
 ```
-tox
-for rebuilding -
+17. Create split_data.py in src folder and write code for file creations in data\processed folder
+18. Update corresponding stage information in dvc.yaml and run below command to see changes
+```bash
+dvc repro
+```
+dvc.lock file is updated
 
-tox -r 
-pytest command
+19. commit changes in git and push code changes to repository 
+```bash
+git add . && git commit -m "second stage complete"
+```
+```bash
+git push origin main
+```
+20. Create a directory called report to save parameters and files json inside it
+```bash
+mkdir report
+touch report/paramas.json
+touch report/scores.json
+```
+21. Create train_and_evaluate.py in src folder and write code for model file creation
+22. Update corresponding stage information in dvc.yaml and run below command to see changes
+```bash
+dvc repro
+```
+dvc.lock file is updated
 
-pytest -v
-setup commands -
+23. commit changes in git and push code changes to repository 
+```bash
+git add . && git commit -m "final stage complete"
+```
+```bash
+git push origin main
+```
 
-pip install -e . 
-build your own package commands-
-
-python setup.py sdist bdist_wheel
