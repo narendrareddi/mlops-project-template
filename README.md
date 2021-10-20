@@ -106,4 +106,11 @@ dvc metrics diff
 dvc params show
 dvc params diff
 ```
-
+25. Add pytest and tox in requirements.txt and install them in current environment with below command
+```bash
+pip install -r requirements.txt
+```
+Push the same to git repository
+```bash
+git add . && git commit -m "final stage complete" && git push origin main
+```
