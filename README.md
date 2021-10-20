@@ -39,6 +39,7 @@ git config --global user.name "yourname"
 git config --global user.email "mail@domain.com"
 ```
 Note:- String should be enclosed between double quotes not single quotes
+
 11. If any file is updated use below command to commit code changes in git
 ```bash
 git add . && git commit -m "update comment"
@@ -49,7 +50,8 @@ git remote add origin https://github.com/narendrareddi/mlops-project-template.gi
 git branch -M main
 it push -u origin main
 ```
-
+13. Update params.yaml file
+14. Create get_data.py in src folder and write code to read data from input file
 tox command -
 
 tox
