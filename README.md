@@ -152,6 +152,14 @@ Here we can get to know Max and Min by dataframe describe  see code in notebooks
 ```bash
 git add . && git commit -m "pytest example" && git push origin main
 ```
-
+32. Add flake8 to requirements.txt to standardise python code. And add flake8 commands in tox.ini
+```bash
+tox -r
+```
+We can see warnings list and correct them
+33.  Push the same to git repository
+```bash
+git add . && git commit -m "flake8 addition" && git push origin main
+```
 
 

@@ -1,4 +1,5 @@
 # To write testcases
+# for methods prefix has to be test_
 
 import pytest
 
