@@ -141,5 +141,17 @@ tox
 ```
 This will create virtual environment, .tor directory will be created
 
+29. Validations are import before processing the data, So we should know accepted Min and Max of each feature
+```bash
+pip install jupyterlab
+jupyter-lab notebooks/
+```
+Here we can get to know Max and Min by dataframe describe  see code in notebooks folder
+30. Write sample code in test_config.py and see whether validations are working or not
+31. Push the same to git repository
+```bash
+git add . && git commit -m "pytest example" && git push origin main
+```
+
 
 
