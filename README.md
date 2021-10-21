@@ -182,5 +182,15 @@ touch webapp/templates/base.html
 ```bash
 git add . && git commit -m "web structure added" && git push origin main
 ```
-
+37. copy model,validation json file to prediction_service
+```bash
+cp saved_models/model.joblib prediction_service/model
+cp notebooks/schema_in.json prediction_service/schema_in.json
+```
+38. See whethere app is running
+39. create a folder for workflow
+```bash
+mkdir -p .github/workflows/
+touch .github/workflows/ci-cd.yaml
+```
 
