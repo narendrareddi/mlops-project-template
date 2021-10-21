@@ -193,4 +193,13 @@ cp notebooks/schema_in.json prediction_service/schema_in.json
 mkdir -p .github/workflows/
 touch .github/workflows/ci-cd.yaml
 ```
+And write code in it
+
+40. Push the same to git repository
+```bash
+git add . && git commit -m "github workflow created" && git push origin main
+```
+Build will be created in github
+41. Create an app and select via Automatic deploy method
+42. Write values for action secrets in github in settings tab
 
