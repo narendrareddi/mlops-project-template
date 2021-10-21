@@ -161,5 +161,26 @@ We can see warnings list and correct them
 ```bash
 git add . && git commit -m "flake8 addition" && git push origin main
 ```
+34. Create a struture with empty folders and files for webapp using below list of commands
+```bash
+mkdir -p prediction_service/model
+mkdir webapp
+touch app.py
+touch prediction_service/__init__.py
+touch prediction_service/prediction.py
+mkdir -p webapp/static/css
+mkdir -p webapp/static/script
+touch webapp/static/css/main.css
+touch webapp/static/script/index.js
+mkdir -p webapp/templates
+touch webapp/templates/index.html
+touch webapp/templates/404.html
+touch webapp/templates/base.html
+```
+35. Write code in above files
+36. Push the same to git repository
+```bash
+git add . && git commit -m "web structure added" && git push origin main
+```
 
 
