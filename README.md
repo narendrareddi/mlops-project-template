@@ -202,4 +202,13 @@ git add . && git commit -m "github workflow created" && git push origin main
 Build will be created in github
 41. Create an app and select via Automatic deploy method
 42. Write values for action secrets in github in settings tab
+43. Create Procfile and write contents to it
+```bash
+touch Procfile
+```
+44. Push the same to git repository
+```bash
+git add . && git commit -m "workflow updated" && git push origin main
+```
+Heroku App will be created
 
